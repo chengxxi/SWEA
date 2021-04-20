@@ -10,8 +10,8 @@ def nqueen(arr, row, n): # dfs
             if arr[i] == arr[row]:
                 break
             if abs(arr[i]-arr[row]) == row - i:
-                print(arr)
-                print(row, i)
+                # print(arr)
+                # print(row, i)
                 break
         else:
             cnt += nqueen(arr, row+1, n)
@@ -41,4 +41,9 @@ for test_case in range(1, int(input())+1):
 N*N 보드에 N개의 퀸을 서로 다른 두 퀸이 공격하지 못하게 놓는 경우의 수는 몇가지가 있을까?
 
 N이 주어졌을 때, 퀸을 놓는 방법의 수를 구하는 프로그램을 작성하시오.
+
+
+
+
+https://velog.io/@rapsby/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-N-Queen-python
 '''
